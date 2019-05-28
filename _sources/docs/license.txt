@@ -1,0 +1,4 @@
+License
+=======
+
+Simple license example

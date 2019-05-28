@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction to AFRL Jetyak &mdash; AFRL Jetyak  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="AFRL Jetyak  documentation" href="../index.html"/>
+        <link rel="next" title="Initial Setup" href="initial_setup.html"/>
+        <link rel="prev" title="AFRL Jetyak" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> AFRL Jetyak
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Introduction to AFRL Jetyak</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#jetyak-components">Jetyak Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#autopilot-hardware">Autopilot Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#channel-rc-transmitter-and-receiver">6+ Channel RC Transmitter and Receiver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gps-module">GPS module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#battery-and-charger">Battery and Charger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ground-control-station">Ground Control Station</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-hardware">Optional Hardware</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#telemetry-radio">Telemetry Radio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sensors">Sensors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="initial_setup.html">Initial Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assembly_instructions.html">Assembly Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="power_installation.html">Power Planning and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sensor_installation.html">Sensor Planning and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">AFRL Jetyak</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Introduction to AFRL Jetyak</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/docs/introduction.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction-to-afrl-jetyak">
+<span id="introduction"></span><h1>Introduction to AFRL Jetyak<a class="headerlink" href="#introduction-to-afrl-jetyak" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/usc_jetyak.png" src="../_images/usc_jetyak.png" />
+<div class="section" id="jetyak-components">
+<h2>Jetyak Components<a class="headerlink" href="#jetyak-components" title="Permalink to this headline">¶</a></h2>
+<p>While it is likely possible to implement this design using comparable components to the ones listed below, we chose these components due to the availability of existing documentation and prior experimentation from the large population of Pixhawk users.</p>
+<p>The first main component is of course the <a class="reference external" href="http://www.mokai.com/mokai-es-kape/">Mokai ES-Kape</a> with quick attach components.</p>
+<img alt="../_images/mokai.png" src="../_images/mokai.png" />
+<p>There are several structural modifications to the factory shipped boat required to support our end-state design.  These structural modifications are documented in a standalone document by our structural engineer.   :red: <cite>PLACE HOLDER FOR LINK TO GEORGE’S DOCUMENTATION OF THE MACHINE SHOP MODIFICATIONS FOR THE FLOOR, BATTERY AND BOX HOLDERS, AND MAST MOUNT.</cite></p>
+</div>
+<div class="section" id="autopilot-hardware">
+<h2>Autopilot Hardware<a class="headerlink" href="#autopilot-hardware" title="Permalink to this headline">¶</a></h2>
+<p>After researching the few consumer off-the-shelf (COTS) autopilot platforms available, we selected the <a class="reference external" href="http://ardupilot.org/rover/docs/common-pixhawk-overview.html#common-pixhawk-overview">Pixhawk</a> due to its high reliability rating and robust capabilities without need for numerous peripheral support devices.</p>
+<p>As our research team will be creating robot vision applications as well as depth and sonar sensor applications, we will also use a separate companion computer running or Linux with a ROS node and MAVROS for processing sensor data and sending control messages to the Pixhawk for controlling the Jetyak.  This setup has been proven on ground and air platforms to be capable of running both robot control and the sensor processing code.</p>
+<p>For more support to augment this tutorial, be prepared to read many topics specific to the flight control community that the Pixhawk and its autopilot components were originally designed to support.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Parts required and detailed diagrams and schematics will be documented and referenced in appendices to this tutorial.</p>
+</div>
+</div>
+<div class="section" id="channel-rc-transmitter-and-receiver">
+<h2>6+ Channel RC Transmitter and Receiver<a class="headerlink" href="#channel-rc-transmitter-and-receiver" title="Permalink to this headline">¶</a></h2>
+<p>You’ll need a radio control transmitter to manually control your Jetyak and to activate its control modes. You can use any RC transmitter/receiver system with at least 6 channels, however due to the robust capabilities and highly flexible programming capabilities, our team has chosen the Fr Sky Taranis X9D Radio with D8R-XP with PPM control to minimize cabling and ports between the radio receiver and Pixhawk.</p>
+<img alt="../_images/rc.png" src="../_images/rc.png" />
+<p>Do not get one designed for cars (with a steering wheel and throttle trigger).  The goal is not be driving the Jetyak manually, but only to have an override mechanism, should conditions dictate. If you’re on a budget, the <a class="reference external" href="https://hobbyking.com/en_us/turnigy-9x-9ch-transmitter-w-module-ia8-receiver-mode-2-afdhs-2a-system.html">Turnigy 9x</a> ($54) is a popular choice. If you’d like better quality, we chose the Taranis FrSky Radio, and this tutorial will be focused on its implementation.</p>
+</div>
+<div class="section" id="gps-module">
+<h2>GPS module<a class="headerlink" href="#gps-module" title="Permalink to this headline">¶</a></h2>
+<p>Your Jetyak will require a GPS module. The module used in this project and described in this tutorial is the <a class="reference external" href="https://www.robotshop.com/en/radiolink-se100-gps-module-pixhawk.html">Radiolink SE100 GPS Module for Pixhawk</a>, which replaced the 3DR UBlox GPS + Compass Module, both of which include a compass that Mission Planner recognizes and uses as a secondary compass to the one in the Pixhawk.</p>
+<img alt="../_images/gps.jpg" src="../_images/gps.jpg" />
+</div>
+<div class="section" id="battery-and-charger">
+<h2>Battery and Charger<a class="headerlink" href="#battery-and-charger" title="Permalink to this headline">¶</a></h2>
+<p>You’ll also need a stout battery to run all the additional onboard hardware separate from the factory battery that comes with the Mokai ES-Kape, and a charger. In our case we chose a <a class="reference external" href="https://www.amazon.com/dp/B00QGLAHWS">12V, 35AH battery from MightyMax</a> to power all non-factory components of the Jetyak.  You find all the conditioning, fusing, and protection steps and specifications we took in the power configuration section of initial setup.</p>
+</div>
+<div class="section" id="ground-control-station">
+<h2>Ground Control Station<a class="headerlink" href="#ground-control-station" title="Permalink to this headline">¶</a></h2>
+<p>The (free and open source) Mission Planner is required if you’re going to be loading new versions of Rover onto the autopilot controller, and for first-time tuning and calibration. At current time, Mission Planner uses the Rover template to setup initial parameters to be as close as possible to the requirements for operating a boat.  It runs on a PC and can also be used for planning missions.  One detailed section of this tutorial will cover the initial setup of Mission Planner and the step-by-step modification of the Rover parameters to allow control of your jetyak.</p>
+<img alt="../_images/laptop.jpg" src="../_images/laptop.jpg" />
+<p>At this point, you could test, build, program, and control a pseudo-autonomous Jetyak, which would be capable of following missions programed through mission planner software and relayed to the jetyak via waypoint navigation commands.  However, if seeking to explore the world of true autonomous operation, where you can program decision making for an onboard autonomous controller, then you will need the following “optional” hardware.</p>
+</div>
+<div class="section" id="optional-hardware">
+<h2>Optional Hardware<a class="headerlink" href="#optional-hardware" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="telemetry-radio">
+<h3>Telemetry Radio<a class="headerlink" href="#telemetry-radio" title="Permalink to this headline">¶</a></h3>
+<p>A telemetry radio allows your jetyak to communicate with your ground station remotely using the MAVLink protocol. This allows you to interact with your missions in real time and receive streaming data from your vehicle’s cameras and other components. This adds considerable convenience to your missions.  RC grade solutions, like the one below will meet the needs of many.</p>
+<img alt="../_images/radio.jpg" src="../_images/radio.jpg" />
+<p>However, in our case, we want the capability to send and receive large swaths of sonar, weather, depth, and robot health data at long ranges during missions.  The COTS solution is for RF modems to be deployed and programmed into the overall design.  We have selected the <a class="reference external" href="http://store.rfdesign.com.au/rfd900p-modem-bundle/">RF900+ modems from RFDesign in Australia</a>, along with all supporting hardware listed in the equipment appendix, to accomplish this task.</p>
+<img alt="../_images/modems.png" src="../_images/modems.png" />
+</div>
+<div class="section" id="sensors">
+<h3>Sensors<a class="headerlink" href="#sensors" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.maxbotix.com/Ultrasonic_Sensors/i2c_distance_sensors-2.htm">Sonar/Depth</a> are recommended to aid in underwater obstacle avoidance and mapping the environment.  After attempting to reverse engineer some proprietary transducers from Garmin and Humminbird, we chose NMEA 0183 CruzPro AT120-P sensor due to its relatively inexpensive cost and the simplicity of reading the desired data fields directly from its serial output, without proprietary drivers.</p>
+<img alt="../_images/sonar.png" src="../_images/sonar.png" />
+<p>Anemometer, or wind sensor is useful in measuring instantaneous wind speed and direction on the vessel.  Information collected can be used to map the environmental wind patterns and predict nearby wind dynamics.  We chose the Sparkfun weather station, which is easily controlled through an Arduino Uno with a transceiver riser board to accommodate the RJ11 connections to the wind direction, wind speed, and rain gauge (unused in our implementation) sensors.  Precise wiring, soldering and programing instructions and code are included in the sensor portion of this tutorial.</p>
+<img alt="../_images/image3.jpg" src="../_images/image3.jpg" />
+<p>Water current speed sensors is the most vital and challenging of the sensors to employ.  While there are acoustic doppler current profilers (ADCP) available, their price excludes them from our goal of maintaining an inexpensive implementation.  The obvious choice is to employ reliable and long existing technology of hall effect sensors mounted in a waterproof housing which sends an interrupt signal to an Arduino each time the magnet passes the gate. The Arduino simply converts the circumference of the wheel along with the number of interrupts per time slot into a linear velocity.  Again after finding the frequencies and voltages of proprietary sensors of hummingbird to be outside the ranges of our 5V Arduino-based sensor group, we focused on a more open source solution and arrived at the ST800/P120 paddle wheel sensor from Raymarine.  Again, the modifications, build, testing, and calibrations conducted with these sensors is included in the sensor chapter.</p>
+<img alt="../_images/image5.jpg" src="../_images/image5.jpg" />
+<p>Combining the measurements of these sensors together enables and wholistic mapping of dynamic environments which in turn enables us to develop strategies for entering such environments as well as implement controls once in a dynamic environment for the ASV to maintain precise and efficient control.
+ADD Sensor Node, power distribution, mast sensor mounts, underwater sensor mount and poles, splash guards (3).</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="initial_setup.html" class="btn btn-neutral float-right" title="Initial Setup" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="AFRL Jetyak" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Autonomous Field Robotics Lab (AFRL).
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

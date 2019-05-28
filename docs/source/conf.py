@@ -40,7 +40,7 @@ release = u''
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'edit_on_github'
+    'edit_on_github',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -97,7 +97,7 @@ html_static_path = ['_static']
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
 # 'searchbox.html']``.
 #
-# html_sidebars = {}
+html_sidebars = {}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
